@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#454545">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42b0a34f06.js" crossorigin="anonymous"></script>
+    <title>Live Code Editor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i> html</label>
+            <textarea name="html" id="html_code" cols="30" rows="10" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt"></i> css</label>
+            <textarea name="css" id="css_code" cols="30" rows="10" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-js"></i> java script</label>
+            <textarea name="java script" id="js_code" cols="30" rows="10" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
